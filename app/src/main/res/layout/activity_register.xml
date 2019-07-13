@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="wyj.speak_weake.Register">
+    <include layout="@layout/bar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/zhuce"
+        android:textSize="23sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <EditText
+            android:id="@+id/username_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_edt"
+            android:drawableLeft="@drawable/ic_perm_identity"
+            android:drawablePadding="8dp"
+            android:hint="@string/number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="8dp"
+            android:textColorHint="#cccccc"
+            android:textSize="13sp" />
+        <EditText
+            android:id="@+id/repassword_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/username_edt"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/login_edt"
+            android:drawableLeft="@drawable/ic_lock_outline"
+            android:drawablePadding="8dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="8dp"
+            android:textColorHint="#cccccc"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/password_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/repassword_edt"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/login_edt"
+            android:drawableLeft="@drawable/ic_lock_outline"
+            android:drawablePadding="8dp"
+            android:hint="@string/repassword"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="8dp"
+            android:textColorHint="#cccccc"
+            android:textSize="13sp" />
+
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/password_edt"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/login_btn"
+            android:text="@string/zhuce1"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:id="@+id/qtfs_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_txt"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.4dp"
+                android:layout_weight="1"
+                android:background="#cccccc" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
